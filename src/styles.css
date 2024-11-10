@@ -175,7 +175,7 @@ footer a {
   }
 
   .grid-3-columns-w-first-narrow {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 0;
   }
 
   section {
@@ -189,7 +189,7 @@ footer a {
   }
 
   main h2 {
-    font-size: 34px;
+    font-size: 32px;
   }
 
   .edimburgh-img {
