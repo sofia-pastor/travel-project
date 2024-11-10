@@ -1,6 +1,6 @@
 body {
   font-family: "Poppins", sans-serif;
-  background-color: rgba(18, 16, 29, 1);
+  background-color: rgba(24, 21, 37, 1);
 }
 
 .container {
@@ -10,13 +10,21 @@ body {
 
 .grid {
   display: grid;
+  grid-gap: 64px;
+}
+
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-3-columns-w-first-narrow {
   grid-template-columns: 1fr 2fr 2fr;
-  grid-gap: 16px;
 }
 
 section {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 100px 0;
 }
 
 header {
@@ -49,6 +57,7 @@ header h3 {
   line-height: 1.5;
   font-weight: 900;
   letter-spacing: 5px;
+  text-transform: uppercase;
   margin: 0;
 }
 
@@ -66,6 +75,42 @@ header a {
   margin-top: 32px;
 }
 
+main {
+  background-color: rgb(18, 16, 29);
+  color: white;
+}
+
+main h3 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 5px;
+  text-align: left;
+  text-transform: uppercase;
+  opacity: 0.3;
+  margin: 0;
+}
+
+main h2 {
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: left;
+  margin: 0;
+}
+
+main p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+  opacity: 0.5;
+}
+
+.img-responsive {
+  width: 100%;
+}
+
 footer {
   color: white;
   text-align: left;
@@ -77,7 +122,6 @@ footer {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 100px 0;
 }
 
 footer h4 {
@@ -123,5 +167,34 @@ footer a {
 
   header h3 {
     font-size: 12px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+  }
+
+  .grid-3-columns-w-first-narrow {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  section {
+    padding: 30px;
+  }
+
+  main h2,
+  main h3,
+  main p {
+    text-align: center;
+  }
+
+  main h2 {
+    font-size: 34px;
+  }
+
+  .edimburgh-img {
+    width: 85%;
+    display: block;
+    margin: 0 auto;
   }
 }
