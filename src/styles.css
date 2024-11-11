@@ -21,10 +21,36 @@ body {
   grid-template-columns: 1fr 2fr 2fr;
 }
 
-section {
-  max-width: 1200px;
+.grid-3-columns {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card {
+  background-color: rgb(39, 36, 53);
+  margin: 30px 0;
+}
+
+.card-body {
+  padding: 30px;
+}
+
+.card-footer {
+  padding: 15px 30px 30px;
+}
+
+.btn {
+  background-color: rgba(70, 44, 178, 1);
+  padding: 16px 32px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 3px;
+  font-weight: 700;
+  line-height: 1.5;
+  display: block;
   margin: 0 auto;
-  padding: 100px 0;
 }
 
 header {
@@ -76,7 +102,6 @@ header a {
 }
 
 main {
-  background-color: rgb(18, 16, 29);
   color: white;
 }
 
@@ -107,8 +132,43 @@ main p {
   opacity: 0.5;
 }
 
+section {
+  margin: 0 auto;
+  padding: 100px;
+}
+
+.first-section {
+  background-color: rgb(18, 16, 29);
+}
+
 .img-responsive {
+  display: block;
   width: 100%;
+}
+
+.second-section {
+  background-color: (24, 21, 37, 1);
+}
+
+.second-section h2,
+.second-section h3 {
+  text-align: center;
+}
+
+main h4 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: left;
+  margin: 0;
+}
+
+main h5 {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: left;
+  margin: 0;
 }
 
 footer {
